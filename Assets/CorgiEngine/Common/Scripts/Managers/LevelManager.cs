@@ -18,6 +18,7 @@ namespace MoreMountains.CorgiEngine
         /// Initializes a LevelNameEvent
         /// </summary>
         /// <param name="levelName"></param>
+        /// <param name="levelName"></param>
         public LevelNameEvent(string levelName)
         {
             LevelName = levelName;
