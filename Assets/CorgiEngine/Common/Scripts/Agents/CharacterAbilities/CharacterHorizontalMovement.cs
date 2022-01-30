@@ -127,7 +127,12 @@ namespace MoreMountains.CorgiEngine
 	    {
             if (!ReadInput)
             {
-                return;
+				//  If you are the HeadOnly then use arrows (arows are seconday horizontal)
+				// Melanie was here
+				// if not then return
+				_horizontalMovement = _horizontalHeadInput;
+
+				return;
             }
 
 			_horizontalMovement = _horizontalInput;

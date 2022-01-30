@@ -81,7 +81,8 @@ namespace MoreMountains.CorgiEngine
 		protected CharacterGravity _characterGravity;
 		protected float _verticalInput;
 		protected float _horizontalInput;
-        protected bool _startFeedbackIsPlaying = false;
+		protected float _horizontalHeadInput; // Melanie was here
+		protected bool _startFeedbackIsPlaying = false;
 
 		/// This method is only used to display a helpbox text at the beginning of the ability's inspector
 		public virtual string HelpBoxText() { return ""; }
@@ -158,6 +159,7 @@ namespace MoreMountains.CorgiEngine
 
 			_verticalInput = _inputManager.PrimaryMovement.y;
 			_horizontalInput = _inputManager.PrimaryMovement.x;
+			_horizontalHeadInput = _inputManager.SecondaryMovement.x;
 
 			if (_characterGravity != null)
 			{
