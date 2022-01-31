@@ -172,6 +172,40 @@ namespace MoreMountains.CorgiEngine
             _originalBounds = LevelBounds;
 	    }
 
+		// Update is called once per frame
+		void Update()
+		{
+			if (Input.GetKeyDown(KeyCode.O))
+			{
+				Debug.Log("time to switch characters");
+
+				Debug.Log(Players.Count);
+
+                /*for (int i = 0; i < Players.Count; i++)
+                {
+					if (Players.Count >= 2)
+					{
+						if (i = 0)
+						
+								}
+
+                }
+*/
+
+	
+			// Find Position of the playerPrefab(s) in the scene
+
+
+				// inactivate the curent playerPrefab(s) in the scene
+
+
+				// instanttiate the other playerPrefabs
+			}
+
+		}
+
+
+
 		/// <summary>
 		/// Instantiate playable characters based on the ones specified in the PlayerPrefabs list in the LevelManager's inspector.
 		/// </summary>
